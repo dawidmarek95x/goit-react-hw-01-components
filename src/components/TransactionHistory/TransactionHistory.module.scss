@@ -18,8 +18,7 @@
   color: #ffffff;
 
   &__type {
-    text-align: left;
-    padding-left: calc(100% / (3 / 0.4));
+
   }
   
   &__row {
@@ -42,8 +41,6 @@
 
   &__type {
     @extend .data;
-    text-align: left;
-    padding-left: calc(100% / (3 / 0.4));
     text-transform: capitalize;
   }
 }
