@@ -2,12 +2,15 @@ import { Profile } from "./Profile/Profile";
 import user from '../data/user.json';
 import { Statistics } from "./Statistics/Statistics";
 import data from '../data/data.json';
+import { FriendList } from "./FriendList/FriendList";
+import friends from "../data/friends.json";
+import { Container } from "./Container/Container";
 
 export const App = () => {
   const {username, tag, location, avatar, stats} = user;
   
   return (
-    <>
+    <Container>
       <Profile 
         username={username}
         tag={tag}
@@ -19,6 +22,7 @@ export const App = () => {
         title="Upload stats" 
         stats={data}
       />
-    </>
+      <FriendList friends={friends}/>
+    </Container>
   );
 };
